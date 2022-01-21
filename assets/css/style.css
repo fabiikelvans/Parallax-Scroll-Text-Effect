@@ -1,0 +1,66 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Orelega+One&display=swap");
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Orelega One", cursive;
+  width: 100%;
+  background: #0a0020;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/*========= Container  ===========*/
+.container {
+  max-width: 600px;
+  margin: 200px 0;
+  width: 90%;
+  padding: 200px 0;
+  position: relative;
+}
+
+.image-container {
+  padding-bottom: 100%;
+  background: #0a0020;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  background-image: url("/assets/images/image-3.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.text {
+  color: #fff;
+  margin: 0;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: -30%;
+  transform: translateY(-50%);
+  z-index: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.text.text-dark {
+  color: orange;
+}
+
+.text span {
+  position: relative;
+  display: block;
+}
